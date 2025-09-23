@@ -1,0 +1,90 @@
+// section container
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 144px;
+}
+
+// cards container
+.review-grid {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+    width: min(1200px, calc(100% - 2em));
+    gap: 2em;
+    justify-content: center;
+    justify-items: center;
+}
+// centering 3rd review
+@media (max-width: 996px) {
+    .review-grid > :last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 664px) {
+    .review-grid > :last-child {
+        grid-column: unset;
+        max-width: unset;
+    }
+
+    .review-last-child {
+        position: relative;
+    }
+
+    .review-last-child::after {
+        position: absolute;
+        content: '';
+        bottom: -1em;
+        height: 5em;
+        left: -1em;
+        right: -1em;
+        background:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.091) 0%, #fff 100%);
+    }
+}
+
+// card
+.review-card {
+    background-color: #ffffff;
+    border-radius: 1em;
+    gap: .8em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ededed;
+    padding: 1em;
+}
+
+
+
+.review-bottom {
+    display: flex;
+    gap: .6em;
+}
+
+.review-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-name {
+    font-weight: 600;
+    display: flex;
+    gap: .25em;
+    font-size: 1rem;
+}
+
+.review-profession {
+    font-size: .875rem;
+    opacity: .7;
+}
+
+.review-p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(63, 63, 63);
+}

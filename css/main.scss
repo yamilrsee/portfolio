@@ -1,0 +1,134 @@
+/* 2. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+  }
+}
+
+#services {
+  scroll-margin-top: 6em;
+}
+
+#testimonials {
+  scroll-margin-top: 6em;
+}
+
+#faq {
+  scroll-margin-top: 6em;
+}
+
+#work {
+  scroll-margin-top: 6em;
+}
+
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select, li, body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background: #ffff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+    background: #26262694;
+    color: #fff;
+}
+
+:root {
+  --light: #fff;
+  --mid-light: #ededed;
+  --dark: #101010;
+  --nav-link: #101010;
+  --p: #676767;
+
+  --button-height: 3rem;
+  --nav-bg: #ededed;
+}
+
+// websites 
+
+:root {
+  --web1: url(../assets/webs/massage.png);
+  --web2: url(../assets/webs/dentist2.png);
+  --web3: url(../assets/webs/law-firm.png);
+  --web4: url(../assets/webs/wink.png);
+  --web5: url(../assets/webs/dentist1.png);
+  --web6: url(../assets/webs/real-estate1.png);
+}
+
+@import "header";
+@import "hero";
+@import "services";
+@import "reviews";
+@import "faq";
+@import "footer";
+@import "modal";
+@import "thank-you";
+
+// variable
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+  display: flex;
+}
+
+.sub-title {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  line-height: 1.25em;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  text-align: center;
+}
