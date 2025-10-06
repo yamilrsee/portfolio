@@ -61,7 +61,7 @@
             }
 
             .badge-p {
-                color: #7D7D7D;
+                color: #424242;
                 font-weight: 500;
                 font-size: .875rem;
             }
@@ -69,19 +69,24 @@
 
         .hero-title {
             text-align: center;
-            font-weight: 900;
+            font-weight: 700;
             font-size: 2.9rem;
             line-height: 1.2em;
             color: var(--dark);
             letter-spacing: -1px;
+            max-width: 980px;
+        }
+
+        .gray {
+            color: #818181;
         }
     
         .hero-p {
             text-align: center;
             font-weight: 500;
-            font-size: 1.125rem;
+            font-size: 1rem;
             color: var(--p);
-            max-width: 23rem;
+            max-width: 25em;
         }
 
         .buttons {
@@ -221,8 +226,9 @@
     }
 
     .hero-container .top .hero-p {
-        max-width: 25rem;
+        font-size: 1.125rem;
     }
+
 }
 
 /* Larger screens - bigger cards */

@@ -91,7 +91,7 @@ a {
   --light: #fff;
   --mid-light: #ededed;
   --dark: #101010;
-  --nav-link: #101010;
+  --nav-link: #686868;
   --p: #676767;
   --button-height: 3rem;
   --nav-bg: #ededed;
@@ -130,6 +130,8 @@ a {
   width: 36px;
   min-width: 36px;
   transition: transform 0.15s ease;
+  box-shadow: 1px 1px 4px #d7d7d7;
+  border-radius: 3px;
 }
 .logo:hover {
   transform: scale(1.04);
@@ -306,24 +308,28 @@ a {
   border-radius: 10px;
 }
 .hero-container .top .badge .badge-p {
-  color: #7D7D7D;
+  color: #424242;
   font-weight: 500;
   font-size: 0.875rem;
 }
 .hero-container .top .hero-title {
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 2.9rem;
   line-height: 1.2em;
   color: var(--dark);
   letter-spacing: -1px;
+  max-width: 980px;
+}
+.hero-container .top .gray {
+  color: #818181;
 }
 .hero-container .top .hero-p {
   text-align: center;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--p);
-  max-width: 23rem;
+  max-width: 25em;
 }
 .hero-container .top .buttons {
   display: flex;
@@ -439,7 +445,7 @@ a {
     font-size: 4.1rem;
   }
   .hero-container .top .hero-p {
-    max-width: 25rem;
+    font-size: 1.125rem;
   }
 }
 /* Larger screens - bigger cards */
@@ -698,7 +704,7 @@ a {
 }
 
 .review-profession {
-  font-size: 0.875rem;
+  font-size: 0.8125em;
   opacity: 0.7;
 }
 
@@ -1177,31 +1183,6 @@ a {
     font-size: 0.9rem;
   }
 }
-.thanks-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-  gap: 1.5em;
-}
-.thanks-container > h2 {
-  font-size: 2rem;
-  max-width: 13em;
-  text-align: center;
-  line-height: 1.2em;
-}
-.thanks-container > button {
-  border: none;
-  border-radius: 5em;
-  color: var(--light);
-  background-color: var(--dark);
-  padding: 1em;
-  font-size: 1.125rem;
-}
-
 .flex {
   display: flex;
 }
