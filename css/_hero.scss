@@ -14,13 +14,12 @@
 
         .badge {
             height: 2em;
-            background-color: rgb(245, 245, 245);
             display: flex;
             align-items: center;
             padding-inline: .6em;
             border-radius: 1em;
-            box-shadow: 0 3px 8px #71717110;
-            border: 1px solid #EDEDED;
+            background: linear-gradient(to right, #FFFFFF 0%, #F2F2F2 19%, #FFFFFF 100%);
+            border: 1px solid #EBEBEB;
 
             .portraits {
                 display: flex;
@@ -70,7 +69,7 @@
         .hero-title {
             text-align: center;
             font-weight: 700;
-            font-size: 2.9rem;
+            font-size: 3rem;
             line-height: 1.2em;
             color: var(--dark);
             letter-spacing: -1px;
@@ -85,8 +84,8 @@
             text-align: center;
             font-weight: 500;
             font-size: 1rem;
-            color: var(--p);
-            max-width: 25em;
+            color: #444444;
+            max-width: 23em;
         }
 
         .buttons {
@@ -122,14 +121,15 @@
         .secondary-cta {
             height: var(--button-height);
             border-radius: 2em;
-            border: 1px solid #CFCFCF;
-            background-color: var(--light);
+            border: 1px solid #EBEBEB;
+            background-color: #F9F9F9;
             padding-inline: 1em;
             font-size: 1.125rem;
             font-weight: 500;
             cursor: pointer;
             color: var(--dark);
             transition: opacity .15s ease;
+            box-shadow: 0 2px 4px #1010100e;
 
             &:hover {
                 opacity: .8;
@@ -219,14 +219,15 @@
 
 // media queries
 
-@media (min-width: 580px) {
+@media (min-width: 730px) {
 
     .hero-container .top .hero-title {
-        font-size: 4.1rem;
+        font-size: 4rem;
     }
 
     .hero-container .top .hero-p {
         font-size: 1.125rem;
+        max-width: 25em;
     }
 
 }

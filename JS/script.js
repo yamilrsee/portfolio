@@ -328,7 +328,23 @@ if (footerButton) {
     console.log('Footer button NOT found');
 }
 
+// Event listener for footer-link with text "Email"
+const emailFooterLink = document.querySelector('.footer-link[href*="mailto"]');
+if (emailFooterLink && emailFooterLink.textContent.trim() === 'Email') {
+    emailFooterLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+    });
+}
 
+// Opens form submission when certain class is clicked
+const contactBtn = document.querySelector('.contact-btn');
+if (contactBtn) {
+    contactBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+    });
+}
 
 function closeModal() {
     modalOverlay.classList.remove('active');
