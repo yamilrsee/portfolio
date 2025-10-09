@@ -346,6 +346,14 @@ if (contactBtn) {
     });
 }
 
+const teamBtn = document.querySelector('.team-btn');
+if (teamBtn) {
+    teamBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+    });
+}
+
 function closeModal() {
     modalOverlay.classList.remove('active');
     document.body.style.overflow = ''; // Restore scrolling
