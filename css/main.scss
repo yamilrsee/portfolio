@@ -12,20 +12,12 @@
   }
 }
 
-#services {
+#services, #testimonials, #work {
   scroll-margin-top: 6em;
 }
 
-#testimonials {
-  scroll-margin-top: 6em;
-}
-
-#faq {
-  scroll-margin-top: 6em;
-}
-
-#work {
-  scroll-margin-top: 6em;
+#our-team {
+  scroll-margin-top: 4.5em;
 }
 
 
@@ -111,6 +103,7 @@ a {
 @import "faq";
 @import "footer";
 @import "modal";
+@import "team";
 
 // variable
 

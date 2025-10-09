@@ -12,20 +12,12 @@
     scroll-behavior: smooth;
   }
 }
-#services {
+#services, #testimonials, #work {
   scroll-margin-top: 6em;
 }
 
-#testimonials {
-  scroll-margin-top: 6em;
-}
-
-#faq {
-  scroll-margin-top: 6em;
-}
-
-#work {
-  scroll-margin-top: 6em;
+#our-team {
+  scroll-margin-top: 4.5em;
 }
 
 /* 6. Improve media defaults */
@@ -131,7 +123,7 @@ a {
   min-width: 36px;
   transition: transform 0.15s ease;
   box-shadow: 1px 1px 4px #d7d7d7;
-  border-radius: 3px;
+  border-radius: 1em;
 }
 .logo:hover {
   transform: scale(1.04);
@@ -713,7 +705,7 @@ a {
 
 .faq-container {
   width: min(1200px, 100% - 2em);
-  padding-bottom: 144px;
+  padding-block: 144px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -734,7 +726,7 @@ a {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  gap: 1em;
 }
 
 .faq-item {
@@ -830,7 +822,7 @@ a {
   gap: 2em;
 }
 .contact .contact-txt {
-  gap: 1.2em;
+  gap: 1em;
 }
 .contact .contact-txt > img {
   border-radius: 5em;
@@ -838,7 +830,7 @@ a {
 }
 .contact .contact-p {
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: 1.1em;
   color: #1f2937;
 }
 .contact .contact-button {
@@ -868,6 +860,7 @@ a {
   width: 100%;
   text-align: center;
   font-weight: 500;
+  color: #686868;
 }
 .contact .contact-email > a {
   color: #FF3C00;
@@ -903,11 +896,6 @@ a {
 .footer-cta .footer-title {
   font-size: 2rem;
   font-weight: 900;
-}
-.footer-cta .footer-p {
-  font-size: 1rem;
-  color: #404040;
-  font-weight: normal;
 }
 .footer-cta .footer-btn {
   padding-inline: 1em;
@@ -1234,6 +1222,59 @@ a {
     font-size: 0.9rem;
   }
 }
+.team-container {
+  width: min(1200px, 100% - 2em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-block: 20px;
+}
+
+.team-cards {
+  gap: 1em;
+  flex-direction: column;
+}
+.team-cards .team-card {
+  max-width: 500px;
+  background: #F9F9F9;
+  border: 1px solid #EDEDED;
+  padding: 1em;
+  border-radius: 1em;
+  flex-direction: column;
+  gap: 1em;
+}
+.team-cards .team-card .team-card-top {
+  display: flex;
+  gap: 0.5em;
+}
+.team-cards .team-card .team-card-top .team-pfp {
+  width: 2.6875em;
+  height: 2.6875em;
+  border-radius: 0.5em;
+}
+.team-cards .team-card .team-card-top .team-info .team-name {
+  font-size: 1.125rem;
+}
+.team-cards .team-card .team-card-top .team-info .team-p {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #595959;
+}
+.team-cards .team-card .team-card-bottom {
+  font-weight: 500;
+  color: #505050;
+}
+.team-cards .team-card .team-card-bottom > span {
+  color: #000000;
+}
+
+.team-btn {
+  align-items: center;
+  gap: 0.5em;
+}
+
 .flex {
   display: flex;
 }

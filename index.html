@@ -49,12 +49,12 @@
           <ul class="nav__ul">
             <li class="nav__link"><a href="index.html#home">Home</a></li>
             <li class="nav__link">
-              <a href="index.html#services">Work</a>
+              <a href="#work">Work</a>
             </li>
             <li class="nav__link">
               <a href="index.html#testimonials">Reviews</a>
             </li>
-            <li class="nav__link"><a href="#">Our team</a></li>
+            <li class="nav__link"><a href="#our-team">Our team</a></li>
             <li class="nav__link"><a href="#faq">FAQs</a></li>
           </ul>
         </nav>
@@ -107,7 +107,7 @@
                 <button class="main-cta">Get In Touch</button>
               </a>
 
-              <a href="index.html#work">
+              <a href="#work">
                 <button class="secondary-cta">Our Work</button>
               </a>
             </div>
@@ -231,7 +231,7 @@
             ><button class="bento-cta">
               Let's Talk
               <img
-                src="assets/circle-arrow.svg"
+                src="assets/arrow-vertical.svg"
                 draggable="false"
                 class="circle-arrow"
                 alt="arrow"
@@ -288,7 +288,7 @@
                 </div>
                 <div class="review-user">
                   <div class="review-name flex">
-                    Joselyn Abraham
+                    Jocelyn Abraham
                     <img
                       src="assets/verified.svg"
                       draggable="false"
@@ -337,6 +337,60 @@
         </div>
       </section>
 
+      <!--==================== OUR TEAM ====================-->
+      <section class="team" id="our-team">
+        <div class="team-container">
+          <h2 class="sub-title">The team behind <br />your success.</h2>
+
+          <div class="team-cards flex">
+            <div class="team-card flex">
+              <div class="team-card-top flex">
+                <img
+                  src="assets/rouse.png"
+                  alt="picture of founder"
+                  class="team-pfp"
+                />
+                <div class="team-info">
+                  <h3 class="team-name">Yamil Rouse</h3>
+                  <p class="team-p">Founder & CEO</p>
+                </div>
+              </div>
+              <div class="team-card-bottom">
+                A self taught <span>designer</span> and <span>developer</span>,
+                started helping a local business get more calls and rank higher
+                on google and now I can't stop. <br /><br />
+                I've built <span>100+ websites</span>, and every single one
+                taught me something new about what makes people click
+                <span>"Book appointment."</span>
+              </div>
+            </div>
+
+            <div class="team-card flex">
+              <div class="team-card-top flex">
+                <img
+                  src="assets/sarah.png"
+                  alt="picture of founder"
+                  class="team-pfp"
+                />
+                <div class="team-info">
+                  <h3 class="team-name">Sarah Belle</h3>
+                  <p class="team-p">Co-Founder & Designer</p>
+                </div>
+              </div>
+              <div class="team-card-bottom">
+                Passionate of making <span>web design,</span> always making sure all our clients have their unique touch for the <span>highest conversion!</span>
+              </div>
+            </div>
+          </div>
+
+          <button class="bento-cta">
+            <a href="" class="flex team-btn"
+              >Get In Touch <img src="assets/arrow-vertical.svg" class="team-btn-img" alt=""
+            /></a>
+          </button>
+        </div>
+      </section>
+
       <!--==================== FAQ ====================-->
       <section class="faq" id="faq">
         <div class="faq-container">
@@ -366,9 +420,12 @@
               </div>
               <div class="faq-answer">
                 <p>
-                  We hand code and design all websites with a human touch and
-                  detail, avoiding weak AI and drag and drop tools that slow
-                  your site and waste your money.
+                  We hand-code bespoke websites with a personal touch, avoiding
+                  generic drag-and-drop tools. We offer honest pricing and high
+                  value, with designs that attract customers and drive
+                  growth.<br /><br />
+                  We also make it right because we only get paid when you're
+                  happy. We care about your success.
                 </p>
               </div>
             </div>
@@ -501,10 +558,6 @@
           <div class="footer-top">
             <div class="footer-cta">
               <h2 class="footer-title">Ready to Grow?</h2>
-              <p class="footer-p">
-                There has never been a better time to <br />
-                get a good website for your business.
-              </p>
               <a href="#" style="display: inline-block"
                 ><button class="footer-btn">Get Started</button></a
               >
@@ -582,23 +635,15 @@
           action="https://formsubmit.co/fe71ea606cb179939abe5694256511d2"
           method="POST"
         >
+          <input type="text" name="_honey" style="display: none" />
           <input
             type="hidden"
             name="_next"
             value="https://yourdomain.com/thanks.html"
           />
-          <input
-            type="hidden"
-            name="_subject"
-            value="New Quote Request from Portfolio"
-          />
-          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_subject" value="You've Got A New Lead" />
+          <input type="hidden" name="_template" value="box" />
           <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            name="_autoresponse"
-            value="Thank you for your message! We'll get back to you soon."
-          />
           <!-- Hidden field for service; updated by JS below -->
           <input type="hidden" name="service" id="service" value="Website" />
 
