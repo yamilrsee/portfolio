@@ -95,10 +95,21 @@
 }
 
 .faq-cta {
-    font-size: 1.025rem;
-    margin-top: 2em;
-    color: rgb(61, 61, 61);
+    height: 42px;
+    border-radius: .8em;
+    border: none;
+    background-color: var(--dark);
+    padding-inline: .8em;
+    font-size: 1rem;
     font-weight: 500;
+    cursor: pointer;
+    color: #ffff;
+    transition: opacity .15s ease;
+    box-shadow:
+    0 2px 4px #1010100e,
+    inset 0 2px 4px #747474,
+    inset 0 -2px 4px #313131,
+    0 2px 0px #272727;
 
     > a {
         text-decoration: underline;

@@ -25,8 +25,8 @@
     width: fit-content;
 
     .footer-title {
-        font-size: 2rem;
-        font-weight: 700;
+        font-size: 1.5rem;
+        font-weight: 7800;
     }
 
     .footer-p {
@@ -34,18 +34,21 @@
     }
 
     .footer-btn {
-        padding-inline: 1em;
         height: 42px;
         border-radius: 3em;
-        color: var(--light);
-        border: 1px solid #363636;
-        background-color: #262626;
+        border: none;
+        background-color: var(--dark);
+        padding-inline: .8em;
         font-size: 1rem;
-        transition: .15s ease;
-        display: block;
-        width: fit-content;
         font-weight: 500;
         cursor: pointer;
+        color: #ffff;
+        transition: opacity .15s ease;
+        box-shadow:
+        0 2px 4px #1010100e,
+        inset 0 2px 4px #747474,
+        inset 0 -2px 4px #313131,
+        0 2px 0px #272727;
 
         &:hover {
             opacity: .9;
