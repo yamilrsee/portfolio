@@ -12,7 +12,7 @@
   }
 }
 
-#services, #testimonials, #work {
+#services, #testimonials, #work, #team {
   scroll-margin-top: 6em;
 }
 
@@ -57,7 +57,7 @@ body {
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
-  background: #ffff;
+  background: var(--light);
 }
 
 ul {

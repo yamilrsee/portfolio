@@ -26,13 +26,13 @@
 
     .footer-title {
         font-size: 2rem;
-        font-weight: 900;
+        font-weight: 700;
     }
 
     .footer-btn {
         padding-inline: 1em;
         height: 42px;
-        border-radius: 5em;
+        border-radius: 3em;
         color: var(--light);
         border: 1px solid #363636;
         background-color: #262626;
@@ -55,7 +55,7 @@
 }
 
 .footer__link-title {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.125rem;
     color: rgb(0, 0, 0);
 }
@@ -63,13 +63,9 @@
 .footer-link {
     font-size: 1.125rem;
     transition: opacity .15s ease;
-    font-weight: 500;
+    font-weight: 400;
     color: #484848;
     margin-top: .5em;
-
-    &:hover {
-        opacity: .7;
-    }
 }
 
 
