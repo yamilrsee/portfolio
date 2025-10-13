@@ -94,12 +94,14 @@
     padding: 0;
 }
 
-.faq-cta {
-    height: 42px;
+.contact .contact-btn {
+    height: 50px;
+    justify-content: center;
     border-radius: .8em;
     border: none;
     background-color: var(--dark);
-    padding-inline: .8em;
+    padding-left: 1em;
+    padding-right: .5em;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -107,9 +109,11 @@
     transition: opacity .15s ease;
     box-shadow:
     0 2px 4px #1010100e,
-    inset 0 2px 4px #747474,
+    inset 0 2px 4px #535353,
     inset 0 -2px 4px #313131,
     0 2px 0px #272727;
+    display: flex;
+    align-items: center;
 
     > a {
         text-decoration: underline;
@@ -150,27 +154,6 @@
     .contact-button {
         gap: 1em;
         flex-direction: column;
-    }
-
-    .contact-btn {
-        background: #101010;
-        color: var(--light);
-        font-size: 1.125rem;
-        font-weight: 500;
-        border-radius: 5em;
-        cursor: pointer;
-        height: 46px;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-        gap: .5em;
-        border: none;
-        box-shadow: 2px 2px 4px #10101017;
-        transition: .15s ease;
-
-        &:hover {
-            opacity: .9;
-        }
     }
 
     .contact-email {

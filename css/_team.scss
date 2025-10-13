@@ -56,7 +56,33 @@
     }
 }
 
-.team-btn {
+.team-cta {
+    margin-top: 1em;
+    height: 42px;
+    border-radius: .8em;
+    border: none;
+    background-color: var(--dark);
+    padding-left: 1em;
+    padding-right: .5em;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #ffff;
+    transition: opacity .15s ease;
+    box-shadow:
+    0 2px 4px #1010100e,
+    inset 0 2px 4px #747474,
+    inset 0 -2px 4px #313131,
+    0 2px 0px #272727;
+    display: flex;
     align-items: center;
-    gap: .5em;
+    gap: .1em;
+
+    > img {
+        width: 20px;
+    }
+
+    &:hover {
+        opacity: .9;
+    }
 }

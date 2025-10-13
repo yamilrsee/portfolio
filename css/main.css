@@ -776,25 +776,29 @@ a {
   padding: 0;
 }
 
-.faq-cta {
-  height: 42px;
+.contact .contact-btn {
+  height: 50px;
+  justify-content: center;
   border-radius: 0.8em;
   border: none;
   background-color: var(--dark);
-  padding-inline: 0.8em;
+  padding-left: 1em;
+  padding-right: 0.5em;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   color: white;
   transition: opacity 0.15s ease;
-  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), inset 0 2px 4px #747474, inset 0 -2px 4px #313131, 0 2px 0px #272727;
+  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), inset 0 2px 4px #535353, inset 0 -2px 4px #313131, 0 2px 0px #272727;
+  display: flex;
+  align-items: center;
 }
-.faq-cta > a {
+.contact .contact-btn > a {
   text-decoration: underline;
   color: #101010;
   transition: opacity 0.15s ease;
 }
-.faq-cta > a:hover {
+.contact .contact-btn > a:hover {
   opacity: 0.7;
 }
 
@@ -823,25 +827,6 @@ a {
 .contact .contact-button {
   gap: 1em;
   flex-direction: column;
-}
-.contact .contact-btn {
-  background: #101010;
-  color: var(--light);
-  font-size: 1.125rem;
-  font-weight: 500;
-  border-radius: 5em;
-  cursor: pointer;
-  height: 46px;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  gap: 0.5em;
-  border: none;
-  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.0901960784);
-  transition: 0.15s ease;
-}
-.contact .contact-btn:hover {
-  opacity: 0.9;
 }
 .contact .contact-email {
   width: 100%;
@@ -889,7 +874,7 @@ a {
 }
 .footer-cta .footer-btn {
   height: 42px;
-  border-radius: 3em;
+  border-radius: 0.5em;
   border: none;
   background-color: var(--dark);
   padding-inline: 0.8em;
@@ -1255,18 +1240,38 @@ a {
   color: #000000;
 }
 
-.team-btn {
+.team-cta {
+  margin-top: 1em;
+  height: 42px;
+  border-radius: 0.8em;
+  border: none;
+  background-color: var(--dark);
+  padding-left: 1em;
+  padding-right: 0.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.15s ease;
+  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), inset 0 2px 4px #747474, inset 0 -2px 4px #313131, 0 2px 0px #272727;
+  display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 0.1em;
+}
+.team-cta > img {
+  width: 20px;
+}
+.team-cta:hover {
+  opacity: 0.9;
 }
 
 .work-container {
-  width: min(1100px, 100% - 2em);
+  width: min(1000px, 100% - 2em);
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 0 auto;
   flex-direction: column;
+  align-items: center;
   padding-bottom: 122px;
 }
 
@@ -1276,7 +1281,7 @@ a {
 
 .work-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5em;
 }
 .work-grid .work-card {
@@ -1286,10 +1291,6 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0.5em;
-  max-width: 550px;
-}
-.work-grid .work-card-2 > .web-pic {
-  margin-bottom: -2em;
 }
 .work-grid .web-pic {
   width: 100%;
@@ -1297,7 +1298,8 @@ a {
   border-radius: 0.8em;
 }
 .work-grid .web-info {
-  padding-block: 12px;
+  padding-top: 0.1em;
+  padding-bottom: 12px;
   padding-inline: 1em;
   display: flex;
   flex-direction: column;
@@ -1317,7 +1319,31 @@ a {
   border-radius: 0.5rem;
   font-size: 14px;
   border: 1px solid #E3E3E3;
-  margin-right: 0.5em;
+}
+
+.work-cta {
+  margin-top: 1em;
+  height: 42px;
+  border-radius: 0.8em;
+  border: none;
+  background-color: var(--dark);
+  padding-left: 1em;
+  padding-right: 0.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.15s ease;
+  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), inset 0 2px 4px #747474, inset 0 -2px 4px #313131, 0 2px 0px #272727;
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+}
+.work-cta > img {
+  width: 20px;
+}
+.work-cta:hover {
+  opacity: 0.9;
 }
 
 @media (max-width: 770px) {
@@ -1325,6 +1351,24 @@ a {
     grid-template-columns: 1fr;
   }
 }
+.web-card-2 .web-info {
+  margin-top: -1em;
+}
+
+.web-card-3 .web-info {
+  margin-top: -1.5em;
+}
+
+.job-made {
+  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.taco > img {
+  max-width: 420px;
+}
+
 .flex {
   display: flex;
 }

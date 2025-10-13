@@ -329,6 +329,14 @@ if (contactBtn) {
     });
 }
 
+const workBtn = document.querySelector('.work-cta');
+if (workBtn) {
+    workBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+    });
+}
+
 const headerBtn = document.querySelector('.header-btn');
 if (headerBtn) {
     headerBtn.addEventListener('click', (e) => {
@@ -460,3 +468,6 @@ modalForm.addEventListener('submit', (e) => {
         modalForm.removeChild(servicesInput);
     });
 });
+
+
+// cards stacking
