@@ -16,7 +16,7 @@
     width: min(980px, calc(100% - 2em));
     background: #ededed;
     border-radius: 1em;
-    padding-inline: 12px;
+    padding-inline: .5em;
 }
 
 .logo {
@@ -49,20 +49,24 @@
 }
 
 .header-btn {
-    height: 40px;
-    border-radius: .5em;
-    border: 1px solid #EBEBEB;
-    background-color: #F9F9F9;
-    padding-inline: 1em;
-    font-size: 1.125rem;
+    height: 42px;
+    border-radius: .8em;
+    border: none;
+    background-color: var(--dark);
+    padding-inline: .8em;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    color: #4d4d4d;
+    color: #ffff;
     transition: opacity .15s ease;
-    box-shadow: 0 2px 4px #1010100e;
+    box-shadow:
+    0 2px 4px #1010100e,
+    inset 0 2px 4px #747474,
+    inset 0 -2px 4px #313131,
+    0 2px 0px #272727;
 
     &:hover {
-        opacity: .8;
+        opacity: .9;
     }
 }
 
@@ -70,6 +74,7 @@
     display: none;
     cursor: pointer;
     z-index: 99;
+    margin-right: .3em;
 }
 
 .bar {

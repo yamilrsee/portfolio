@@ -94,34 +94,32 @@
         }
 
         .main-cta {
-            background: var(--dark);
-            width: fit-content;
-            padding-inline: 1em;
             height: var(--button-height);
-            border-radius: 2em;
-            border: 1px solid #484848;
-            color: var(--light);
-            display: flex;
-            gap: .4em;
-            align-items: center;
+            border-radius: 3em;
+            border: none;
+            background-color: var(--dark);
+            padding-inline: 1em;
             font-size: 1.125rem;
             font-weight: 500;
             cursor: pointer;
-            transition: gap .2s ease;
-            box-shadow: 
-            inset 0 2px 4px rgb(60, 60, 60),
-            inset 0 -2px 4px rgb(60, 60, 60),
-            0 4px 4px rgba(60, 60, 60, 0.086);
+            color: #ffff;
+            transition: opacity .15s ease;
+            box-shadow:
+            0 2px 4px #1010100e,
+            inset 0 2px 4px #747474,
+            inset 0 -2px 4px #202020,
+            0 2px 0px #272727;
+
 
             &:hover {
-                gap: .6em;
+                opacity: .9;
             }
         }
 
         .secondary-cta {
             height: var(--button-height);
             border-radius: 2em;
-            border: 1px solid #EBEBEB;
+            border: 1px solid #dbdbdb;
             background-color: #F9F9F9;
             padding-inline: 1em;
             font-size: 1.125rem;
@@ -129,7 +127,8 @@
             cursor: pointer;
             color: var(--dark);
             transition: opacity .15s ease;
-            box-shadow: 0 2px 4px #1010100e;
+            box-shadow: 0 2px 4px #1010100e,
+            0 2px 0px #e0e0e0;
 
             &:hover {
                 opacity: .8;
