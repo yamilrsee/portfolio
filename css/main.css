@@ -338,7 +338,7 @@ a {
   cursor: pointer;
   color: var(--dark);
   transition: opacity 0.15s ease;
-  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), 0 2px 0px #e0e0e0;
+  box-shadow: 0 2px 0px #ececec;
 }
 .hero-container .top .secondary-cta:hover {
   opacity: 0.8;

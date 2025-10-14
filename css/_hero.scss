@@ -127,8 +127,8 @@
             cursor: pointer;
             color: var(--dark);
             transition: opacity .15s ease;
-            box-shadow: 0 2px 4px #1010100e,
-            0 2px 0px #e0e0e0;
+            box-shadow:
+            0 2px 0px #ececec;
 
             &:hover {
                 opacity: .8;
