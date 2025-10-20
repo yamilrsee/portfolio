@@ -215,6 +215,29 @@ a {
     display: none;
   }
 }
+.mobile-btn {
+  height: 42px;
+  border-radius: 0.8em;
+  border: none;
+  background-color: var(--dark);
+  padding-inline: 1em;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  transition: opacity 0.15s ease;
+  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), inset 0 2px 4px #747474, inset 0 -2px 4px #313131, 0 2px 0px #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem 1rem 1rem;
+}
+
+@media (min-width: 770px) {
+  .mobile-btn {
+    display: none;
+  }
+}
 .nav--open {
   max-height: 500px;
 }
@@ -404,6 +427,9 @@ a {
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
