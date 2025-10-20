@@ -322,7 +322,7 @@ a {
   cursor: pointer;
   color: white;
   transition: opacity 0.15s ease;
-  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), inset 0 2px 4px #747474, inset 0 -2px 4px #202020, 0 2px 0px #272727;
+  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.0549019608), inset 0 2px 4px #747474, inset 0 -2px 4px #202020;
 }
 .hero-container .top .main-cta:hover {
   opacity: 0.9;
@@ -330,7 +330,7 @@ a {
 .hero-container .top .secondary-cta {
   height: var(--button-height);
   border-radius: 2em;
-  border: 1px solid #dbdbdb;
+  border: 1px solid #eaeaea;
   background-color: #F9F9F9;
   padding-inline: 1em;
   font-size: 1.125rem;
@@ -338,7 +338,6 @@ a {
   cursor: pointer;
   color: var(--dark);
   transition: opacity 0.15s ease;
-  box-shadow: 0 2px 0px #ececec;
 }
 .hero-container .top .secondary-cta:hover {
   opacity: 0.8;
@@ -366,12 +365,11 @@ a {
   border-radius: 0.8em;
   flex-shrink: 0;
   max-width: 1100px;
-  border: 2px solid #f1f1f1;
-  transition: transform, box-shadow, 0.15s ease;
+  box-shadow: 0 4px 8px rgba(16, 16, 16, 0.0509803922);
+  transition: transform 0.15s ease;
 }
 .hero-container .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 4px 8px rgba(16, 16, 16, 0.0509803922);
 }
 .hero-container .card1 {
   background-size: cover;
@@ -406,9 +404,6 @@ a {
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }
 
