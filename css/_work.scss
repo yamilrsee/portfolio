@@ -99,12 +99,10 @@
     }
 }
 
-.web-card-2 .web-info {
-    margin-top: -1em;
-}
-
-.web-card-3 .web-info {
-    margin-top: -1.5em;
+.work-card-2 {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .job-made {
