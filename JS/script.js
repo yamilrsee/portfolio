@@ -329,6 +329,24 @@ if (contactBtn) {
     });
 }
 
+//mobile-btn
+
+const mobileBtn = document.querySelector('.mobile-btn');
+if (mobileBtn) {
+    mobileBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+    });
+}
+
+const teamCta = document.querySelector('.team-cta');
+if (teamCta) {
+    teamCta.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal();
+    });
+}
+
 const workBtn = document.querySelector('.work-cta');
 if (workBtn) {
     workBtn.addEventListener('click', (e) => {
