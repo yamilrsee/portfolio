@@ -1,103 +1,3 @@
-/* 2. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* 3. Enable keyword animations */
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    interpolate-size: allow-keywords;
-    scroll-behavior: smooth;
-  }
-}
-#services, #testimonials, #work, #team {
-  scroll-margin-top: 6em;
-}
-
-#our-team {
-  scroll-margin-top: 4.5em;
-}
-
-/* 6. Improve media defaults */
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-/* 7. Inherit fonts for form controls */
-input, button, textarea, select, li, body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-/* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-  overflow-wrap: break-word;
-}
-
-/* 9. Improve line wrapping */
-p {
-  text-wrap: pretty;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  text-wrap: balance;
-}
-
-/*
-10. Create a root stacking context
-*/
-#root, #__next {
-  isolation: isolate;
-}
-
-body {
-  line-height: 1.5;
-  /* 5. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
-  min-height: 100vh;
-  background: var(--light);
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-::-moz-selection {
-  background: rgba(38, 38, 38, 0.5803921569);
-  color: #fff;
-}
-
-::selection {
-  background: rgba(38, 38, 38, 0.5803921569);
-  color: #fff;
-}
-
-:root {
-  --light: #fff;
-  --mid-light: #ededed;
-  --dark: #101010;
-  --nav-link: #686868;
-  --p: #676767;
-  --button-height: 3rem;
-  --nav-bg: #ededed;
-}
-
-:root {
-  --web1: url(../assets/webs/massage.png);
-  --web2: url(../assets/webs/dentist2.png);
-  --web3: url(../assets/webs/law-firm.png);
-  --web4: url(../assets/webs/wink.png);
-  --web5: url(../assets/webs/dentist1.png);
-  --web6: url(../assets/webs/real-estate1.png);
-}
-
 .header {
   position: fixed;
   width: 100%;
@@ -1382,6 +1282,106 @@ a {
   gap: 0.5em;
   display: flex;
   flex-wrap: wrap;
+}
+
+/* 2. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
+  }
+}
+#services, #testimonials, #work, #team {
+  scroll-margin-top: 6em;
+}
+
+#our-team {
+  scroll-margin-top: 4.5em;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select, li, body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  background: var(--light);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(38, 38, 38, 0.5803921569);
+  color: #fff;
+}
+
+::selection {
+  background: rgba(38, 38, 38, 0.5803921569);
+  color: #fff;
+}
+
+:root {
+  --light: #fff;
+  --mid-light: #ededed;
+  --dark: #101010;
+  --nav-link: #686868;
+  --p: #676767;
+  --button-height: 3rem;
+  --nav-bg: #ededed;
+}
+
+:root {
+  --web1: url(../assets/webs/massage.png);
+  --web2: url(../assets/webs/dentist2.png);
+  --web3: url(../assets/webs/law-firm.png);
+  --web4: url(../assets/webs/wink.png);
+  --web5: url(../assets/webs/dentist1.png);
+  --web6: url(../assets/webs/real-estate1.png);
 }
 
 .flex {

@@ -1,3 +1,14 @@
+@use "header" as *;
+@use "hero" as *;
+@use "services" as *;
+@use "reviews" as *;
+@use "faq" as *;
+@use "footer" as *;
+@use "modal" as *;
+@use "team" as *;
+@use "work" as *;
+
+
 /* 2. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -95,16 +106,6 @@ a {
   --web5: url(../assets/webs/dentist1.png);
   --web6: url(../assets/webs/real-estate1.png);
 }
-
-@import "header";
-@import "hero";
-@import "services";
-@import "reviews";
-@import "faq";
-@import "footer";
-@import "modal";
-@import "team";
-@import "work";
 
 // variable
 
